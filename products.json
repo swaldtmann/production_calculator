@@ -1,25 +1,128 @@
 {
-   "axe": {
-      "batch_size": 2,
-      "ingredients": {
-         "rock": 2,
-         "stick": 2,
-         "tape": 2
-      }
-   },
-   "double_axe": {
+   "Large Optronic Matrix": {
       "batch_size": 1,
       "ingredients": {
-         "axe": 2,
-         "tape": 1
+         "Gold Ingot": 10,
+         "Small Optronic Matrix": 1,
+         "Power Coil": 4,
+         "Computer": 10,
+         "Zascosium Alloy": 20
       }
    },
-   "quadruple_axe": {
+   "Small Optronic Matrix": {
       "batch_size": 1,
       "ingredients": {
-         "double_axe": 2,
-         "rock": 2,
-         "tape": 1
+         "Gold Ingot": 6,
+         "Computer": 25,
+         "Energy Regulator": 10
+      }
+   },
+   "Computer": {
+      "batch_size": 1,
+      "ingredients": {
+         "Steel Plate": 1,
+         "Optical Fiber": 5,
+         "Electronics": 15
+      }
+   },
+   "Steel Plate": {
+      "batch_size": 10,
+      "ingredients": {
+         "Iron Ingot": 5
+      }
+   },
+   "Energy Regulator": {
+      "batch_size": 1,
+      "ingredients": {
+         "Cobalt Ingot": 2,
+         "Optical Fiber": 3,
+         "Electronics": 8
+      }
+   },
+   "Optical Fiber": {
+      "batch_size": 6,
+      "ingredients": {
+         "Silicon Ingot": 1
+      }
+   },
+   "Electronics": {
+      "batch_size": 8,
+      "ingredients": {
+         "Copper Ingot": 2,
+         "Silicon Ingot": 1
+      }
+   },
+   "Power Coil": {
+      "batch_size": 1,
+      "ingredients": {
+         "Energy Regulator": 2,
+         "Zascosium Alloy": 8,
+         "Flux Coil": 2,
+         "Advanced Electronics": 2
+      }
+   },
+   "Zascosium Alloy": {
+      "batch_size": 5,
+      "ingredients": {
+         "Erestrum Ingot": 5,
+         "Zascosium Ingot": 5
+      }
+   },
+   "Flux Coil": {
+      "batch_size": 1,
+      "ingredients": {
+         "Titanium Plates": 4,
+         "Neodymium Ingots": 5,
+         "Cobalt Ingot": 2,
+         "Copper Ingot": 2
+      }
+   },
+   "Titanium Plates": {
+      "batch_size": 10,
+      "ingredients": {
+         "Titanium Ingot": 5
+      }
+   },
+   "Advanced Electronics": {
+      "batch_size": 4,
+      "ingredients": {
+         "Neodymium Ingots": 4,
+         "Glass Plate": 1,
+         "Electronics": 2,
+         "Optical Fiber": 4,
+         "Cobalt Alloy": 2,
+         "Titanium Plates": 4 
+      }
+   },
+   "Cobalt Alloy": {
+      "batch_size": 5,
+      "ingredients": {
+         "Cobalt Ingot": 3,
+         "Iron Ingot": 2
+      }
+   },
+   "Glass Plate": {
+      "batch_size": 1,
+      "ingredients": {
+         "Silicon Ingot": 2
+      }
+   },
+   "Large Optronic Bridge": {
+      "batch_size": 1,
+      "ingredients": {
+         "Gold Ingot": 5,
+         "Small Optronic Bridge": 1,
+         "Advanced Electronics": 24,
+         "Zascosium Alloy": 20
+      }
+   },
+   "Small Optronic Bridge": {
+      "batch_size": 1,
+      "ingredients": {
+         "Gold Ingot": 5,
+         "Electronics": 30,
+         "Advanced Electronics": 20,
+         "Optical Fiber": 20
       }
    }
 }
