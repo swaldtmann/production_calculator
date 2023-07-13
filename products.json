@@ -1,0 +1,25 @@
+{
+   "axe": {
+      "batch_size": 2,
+      "ingredients": {
+         "rock": 2,
+         "stick": 2,
+         "tape": 2
+      }
+   },
+   "double_axe": {
+      "batch_size": 1,
+      "ingredients": {
+         "axe": 2,
+         "tape": 1
+      }
+   },
+   "quadruple_axe": {
+      "batch_size": 1,
+      "ingredients": {
+         "double_axe": 2,
+         "rock": 2,
+         "tape": 1
+      }
+   }
+}
