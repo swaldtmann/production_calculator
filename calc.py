@@ -11,14 +11,20 @@ import math
 with open('products.json', 'r') as f:
     recipes = json.load(f)
 
-def count_raw_ingredients(recipe):
+def count_raw_ingredients(recipe, to_level=0, bom_level=1):
     ingredients = defaultdict(int)
     for ingredient, amount in recipes[recipe]["ingredients"].items():
         if ingredient not in recipes:
             ingredients[ingredient] += amount
         else:
+            #print(bom_level)
+            if to_level:
+                if to_level >= bom_level:
+                    ingredients[ingredient] += amount
+                    print(ingredient)
+                    continue
             bs = recipes[ingredient]["batch_size"]
-            for subingredient, subamount in count_raw_ingredients(ingredient).items():
+            for subingredient, subamount in count_raw_ingredients(ingredient, bom_level=bom_level+1).items():
                 ingredients[subingredient] += amount * subamount / bs
 
     return dict(ingredients)
@@ -31,7 +37,7 @@ print("Full set of CPU Extenders needs:")
 bridge_name = "Large Optronic Bridge"
 brigde_count = 56
 print(f"{brigde_count} x {bridge_name}:")
-for ing, am in sorted(count_raw_ingredients(bridge_name).items()):
+for ing, am in sorted(count_raw_ingredients(bridge_name, 0).items()):
     total_ingredients[ing] += am*brigde_count
     print(f"{math.ceil(total_ingredients[ing]):6.0f} x {ing}")
 matrix_name = "Large Optronic Matrix"
