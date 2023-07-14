@@ -30,22 +30,24 @@ def count_raw_ingredients(recipe, to_level=0, bom_level=1):
     return dict(ingredients)
 
 #for product in ["Large Optronic Bridge", "Large Optronic Matrix"]: #  56 / 20
-#    print(count_raw_ingredients(product), "Batch Size: "+ str(recipes[product]["batch_size"]))
+print(count_raw_ingredients("Small Optronic Bridge"), "Batch Size: "+ str(recipes["Small Optronic Bridge"]["batch_size"]))
+
+#sys.exit()
+
+products = defaultdict(int)
+#products["Large Optronic Bridge"] = 56
+#products["Large Optronic Matrix"] = 20
+products["Small Optronic Bridge"] = 16
+
 
 total_ingredients = defaultdict(int)
-print("Full set of CPU Extenders needs:")
-bridge_name = "Large Optronic Bridge"
-brigde_count = 56
-print(f"{brigde_count} x {bridge_name}:")
-for ing, am in sorted(count_raw_ingredients(bridge_name, 0).items()):
-    total_ingredients[ing] += am*brigde_count
-    print(f"{math.ceil(total_ingredients[ing]):6.0f} x {ing}")
-matrix_name = "Large Optronic Matrix"
-matrix_count = 20
-print(f"{matrix_count} x {matrix_name}:")
-for ing1, am1 in sorted(count_raw_ingredients(matrix_name).items()):
-    total_ingredients[ing1] += am1*matrix_count
-    print(f"{math.ceil(am1*matrix_count):6.0f} x {ing1}")
+
+for product, amount in products.items():
+    print(f"{amount} x {product}:")
+    for ing, am in sorted(count_raw_ingredients(product).items()):
+        total_ingredients[ing] += am*amount
+        print(f"{math.ceil(am*amount):6.0f} x {ing}")
+
 print("Total:")
 for ing2, am2 in sorted(total_ingredients.items()):
     print(f"{math.ceil(total_ingredients[ing2]):6.0f} x {ing2}")
