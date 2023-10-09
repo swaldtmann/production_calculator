@@ -124,5 +124,91 @@
          "Advanced Electronics": 20,
          "Optical Fiber": 20
       }
+   },
+   "Auxilary Core Construction Kit": {
+      "batch_size": 1,
+      "unlock_points": 1500,
+      "ingredients": {
+         "Salvaged Drone Swarm Processors": 100,
+         "Quantum Computer": 8,
+         "Flux Coil": 32,
+         "Power Coil": 16,
+         "Large Optronic Bridge": 16,
+         "Large Optronic Matrix": 8
+      }
+   },
+   "Small Auxilary CPU": {
+      "batch_size": 1,
+      "ingredients": {
+         "Salvaged Drone Swarm Processors": 35,
+         "Quantum Computer": 1,
+         "Flux Coil": 16,
+         "Power Coil": 4,
+         "Small Optronic Bridge": 16,
+         "Small Optronic Matrix": 8,
+         "Gold Ingot": 35,
+         "Aluminium Foil": 35
+      }
+   },
+   "Aluminium Foil": {
+      "batch_size": 1,
+      "ingredients": {
+         "Aluminium Powder": 5
+      }
+   },
+   "Quantum Computer": {
+      "batch_size": 1,
+      "ingredients": {
+         "Computer": 10,
+         "Advanced Electronics": 10,
+         "Energy Regulator": 10,
+         "Semiconductor": 10,
+         "Small Optronic Matrix": 1,
+         "Aluminium Foil": 5
+      }
+
+   },
+   "Semiconductor": {
+      "batch_size": 1,
+      "ingredients": {
+         "Silicon Ingot": 10,
+         "Copper Ingot": 5,
+         "Gold Ingot": 6,
+         "Carbon Substrate": 25,
+         "Aluminium Powder": 10,
+         "Silver Powder": 4,
+         "Platinum Plate": 10
+      }
+   },
+   "Carbon Substrate": {
+      "batch_size": 20,
+      "ingredients": {
+         "Plant fibers": 16,
+         "Stone Dust": 2
+      }
+   },
+   "Plant fibers": {
+      "batch_size": 8,
+      "ingredients": {
+         "Wooden Planks": 3
+      }
+   },
+   "Wooden Planks": {
+      "batch_size": 12,
+      "ingredients": {
+         "Wood Logs": 1
+      }
+   },
+   "Stone Dust": {
+      "batch_size": 10,
+      "ingredients": {
+         "Crushed Stone": 5
+      }
+   },
+   "Platinum Plate": {
+      "batch_size": 10,
+      "ingredients": {
+         "Platium Ingot": 5
+      }
    }
 }
